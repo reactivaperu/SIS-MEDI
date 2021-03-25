@@ -1,0 +1,16 @@
+# dependencies
+/Aplicacion/package-lock.json
+/Aplicacion/node_modules
+/Aplicacion/build
+
+/Servidor/package-lock.json
+/Servidor/node_modules
+/Servidor/build
+
+# enviroment variables
+.env
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

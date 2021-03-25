@@ -1,0 +1,114 @@
+/*
+-- File:             Estilos.css
+-- Project Name:     MediSeda
+-- Version:          0.0.1
+-- Description:      Estilos de Aplicación MediSeda
+-- Author:           Jorge Muñiz
+-- Create Date:      2019-10-02
+-- @Copyright        Jorge.Muñiz.Velasquez - World Connect Perú - 2020
+*/
+html{height:100%;}body{margin:0;padding:0;font-family:sans-serif;height:100%;}
+table{border-collapse:collapse;}th{padding:8px;background:#10679E;color:#ffffff;}td{padding:5px;}
+input:checked+.boton_deslizar{background-color:#66bb6a;}input:checked+.boton_deslizar:before{transform:translateX(26px);}
+fieldset{border-radius:5px;}fieldset input{border:none;padding:5px;font-size:15px;}fieldset legend{color:#0072B5;font-weight:bold;}
+
+.centrado{display:flex;justify-content:center;}.contenedor{margin:20px;}
+
+.tabla_fila:hover td{background:#1791DF;color:#ffffff;}.tabla_fila{border-bottom:1px solid lightgray;padding-top:4px;height:2.4em;}
+
+.modal{position:fixed;z-index:1050;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.4);}
+.modal_ventana{background-color:#fefefe;margin:15% auto;padding:15px;border:2px solid #888;border-radius:8px;width:max-content;}
+.modal_encabezado{font-size:20px;display:grid;grid-template-columns:90%10%;}
+
+.barra_herramientas {position:fixed;top:0;left:0;width:100%;background:#154360;height:56px;}
+.barra_herramientas_navegador{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:2px;height:100%;align-items:center;padding:0 0.8rem;}
+.barra_herramientas_sesion{display:grid;grid-gap:5px;grid-template-columns:repeat(2,1fr);align-items:center;justify-items:right;}
+.barra_herramientas_boton_logo{display:grid;grid-gap:5px;grid-template-columns:repeat(2,1fr);align-items:center;width:0;}
+.barra_herramientas_navegador_usuario{display:grid;grid-template-columns:1fr 1fr 100%;grid-gap:5px;cursor:pointer;width:0px;text-decoration:none;}
+.barra_herramientas_boton_linea{width:30px;height:2px;background:white;border:1px solid #0072B5;}
+.barra_herramientas_boton{justify-content:center;cursor:pointer;font-size:2rem;color:white}.barra_herramientas_navegador_usuario>div{font-size:20px;color:white;}
+.barra_herramientas_logo{width:100px;cursor:pointer;}
+
+.navegador{border-bottom:2px solid #ced4da;}
+.navegador_administrador{display:grid;grid-template-columns: 50% 9% 9% 9% 9% 9%;}
+.navegador_titulo{display:flex;text-align: center;justify-content:center;align-items:center;font-size:30px;padding:5px;}
+.navegador_boton{display:flex;justify-content:center;align-items:center;border:1px solid #ced4da;cursor:pointer;font-size: 14px;
+text-align:center;height:60px;color:#0072B5;text-decoration:none;}
+.navegador_boton:hover{color:white;background-color:#0072B5;border:1px solid #0072B5;}
+
+.menu_cuadro_administrador{display:grid;grid-template-columns:repeat(4,1fr);grid-column-gap:5px;}
+.menu_cuadro_operador{display:grid;grid-template-columns:repeat(2,1fr);grid-column-gap:5px;}
+.menu_cuadro_ingreso{display:grid;grid-template-columns:repeat(1,1fr);grid-column-gap:5px;}
+.menu_cuadro a{text-decoration:none;color:black;}
+.menu_cuadro a div{padding: 10px;}
+
+.item_actividad_operador{display:grid;grid-template-columns:1fr;grid-gap:4px;}
+.actividad_boton_link{text-decoration:none;font-size:20px;color:#0072B5;}
+
+.tres_columnas{display:grid;grid-template-columns:repeat(3,1fr);grid-column-gap:1%;}
+.dos_columnas{display:grid;grid-template-columns:repeat(2,1fr);grid-column-gap:2%;}
+.una_columna{display:grid;grid-gap:10px;grid-template-columns:1fr;}
+
+.cuadro_mensaje{text-align:center;padding:5px;margin:5px;border:1px solid #ccc;border-radius:8px;}
+.cuadro_dato{border:1.5px solid #ced4da;border-radius:.25rem;padding:5px;font-size:15px;}
+.cuadro_archivo{position:relative;width:100%;padding-top:2%;}
+.cuadro_archivo_nombre {position:absolute;top:0;right:0;left:0;padding:.375rem .75rem;color:#495057;background-color:#fff;border:1px solid #ced4da;border-radius:.25rem;}
+
+.advertencia{color:#856404;background-color:#fff3cd;border-color:#ffeeba;}
+.peligro{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb;}
+.exito{color:#155724;background-color:#d4edda;border-color:#c3e6cb;}
+.informacion{color:#0c5460;background-color:#d1ecf1;border-color:#bee5eb;}
+.basico{color:#004085;background-color:#cce5ff;border-color:#b8daff;}
+
+.boton{background-color:transparent;border-radius:0.6em;cursor:pointer;text-align:center;text-transform:uppercase;
+    font-weight:700;font-size:1rem;margin:10px;padding:.7em 1.2em;}
+.boton_verde{border:2px solid #2ecc71;color: #2ecc71;}
+.boton_verde:hover,.boton_verde:focus{color: #fff;background-color:#2ecc71;}
+.boton_rojo{border:2px solid #e74c3c;color: #e74c3c;}
+.boton_rojo:hover,.boton_rojo:focus{color: #fff;background-color:#e74c3c;}
+.boton_amarillo{border:2px solid #f1c40f;color: #f1c40f;}
+.boton_amarillo:hover,.boton_amarillo:focus{color: #fff;background-color:#f1c40f;}
+.boton_azul{border:2px solid #3498db;color: #3498db;}
+.boton_azul:hover,.boton_azul:focus{color: #fff;background-color:#3498db;}
+.boton_habilitado{position:relative;display:flex;height:24px;width:50px;}.boton_habilitado input{display:none;} 
+.boton_position{display:grid;}
+
+.boton_deslizar{background-color:#ccc;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0;transition:.4s;}
+.boton_deslizar:before{position:absolute;content:"";bottom:2px;left:1px;background-color:#fff;transition:.4s;width:20px;height:20px;}
+.boton_deslizar.redondo{border-radius:34px;}.boton_deslizar.redondo:before{border-radius:50%;}
+.boton_excel_descarga{background:transparent;border:0px;width:64px;height:64px;position:absolute;display:flex;cursor:pointer;}
+.boton_cerrar{cursor:pointer;border:solid 2px red;color:red;border-radius:8px;text-align:center;width:22px;height:22px;justify-self:end;font-weight:bold;margin-left:10px;}
+.boton_cerrar:hover,.boton_cerrar:focus{color:red;border-color:red;}
+
+.icono_sesion{width:25px;height:25px;margin-bottom:-4px;}
+.icono_usuario{width:20px;height:100%;}
+
+.buscador_actividad_reporte{width:50%;display:grid;grid-template-columns:1fr 400px;grid-gap:10px;}
+.buscador_actividad_impresion{width:100%;display:grid;grid-template-columns:repeat(3,1fr);}
+.buscador_actividad_impresion_boton{display:grid;grid-template-columns:repeat(2,1fr);}
+.paginado_impresion{display:grid;grid-template-columns:repeat(1,1fr);align-items:center;}
+.paginado_eliminar{display:flex;justify-content:center;align-items:center;}
+.impresion_actividad_botones{display:grid;grid-template-columns:repeat(2,1fr)}
+
+.paginado{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:10px;align-items:center;justify-items:center;}
+.actividad_operador{width:50%;}
+.dato_anterior{font:600 12px sans-serif;color:red;}
+.multiSelect{padding:0px;font:700 18px sans-serif;text-transform:capitalize;height:300px;}
+
+@media (max-width: 640px){.navegador{display:auto;}}
+
+@media (max-width: 375px){
+    .usuario_apellido{display:none;}
+    .barra_herramientas_navegador_usuario{width:auto}
+    .menu_cuadro_administrador{grid-template-columns:repeat(2,1fr);grid-column-gap:3px;}
+    .menu_cuadro_administrador a div{padding:3px;}
+
+    .buscador_actividad{display:flex;justify-content:center;}
+    .buscador_actividad_reporte > select{width:300px;}
+    .buscador_actividad_impresion{width:100%;grid-template-columns:repeat(1,1fr)!important;}
+    .buscador_actividad_reporte{display:grid;grid-template-columns:1fr;grid-gap:10px;width:300px;}
+    .impresion_actividad_botones{display:grid;grid-template-columns:repeat(1,1fr)}
+    .tabla_actividad{width: 300px;}
+    .actividad_operador{width:100%;}
+
+}
